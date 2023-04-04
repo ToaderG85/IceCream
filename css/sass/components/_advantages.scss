@@ -35,6 +35,27 @@
     }
 }
 
+.advantages-section__item--one::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/advantages/bucket.png);
+}
+
+.advantages-section__item--two::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/advantages/apple-bucket.png);
+}
+
+.advantages-section__item--three::before {
+    content: "";
+    width: 46px;
+    height: 50px;
+    background-image: url(../images/advantages/heart.png);
+}
+
 @media screen and (max-width :767px) {
     .advantages-section__list {
         flex-wrap: wrap;
