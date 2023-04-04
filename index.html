@@ -11,6 +11,16 @@
         <link rel="stylesheet" href="css/main.min.css">
     </head>
     <body>
+        <!--ModalSection-->
+        <div class="modal is-hidden" data-modal>
+            <div class="inner-div">
+                <button data-modal-close class="close-button">
+                    <svg width="11" height="11">
+                    <use href="images/icons-svg.svg#icon-close"></use>
+                    </svg>
+                </button>                               
+            </div>
+        </div>
         <main>
             <!-- AboutSection -->
             <section class="about-section">
@@ -54,7 +64,7 @@
                                         </p>
                                     </li>
                                     <li class="description__item">
-                                        <button class="button" type="button">
+                                        <button data-modal-open class="button" type="button">
                                             Read more
                                             <svg width="4.4" height="8">
                                                 <use href="images/icons-svg.svg#icon-btn-arrow"</use>
@@ -88,5 +98,6 @@
                 </div>
             </section>
         </main>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
